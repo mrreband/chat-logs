@@ -6,7 +6,7 @@ layout: default
 .pinned-summary {
   position: sticky; top: 0; background: white;
   padding: 1rem; border: 2px solid #0969da;
-  cursor: pointer; z-index: 1000; font-weight: bold;
+  cursor: pointer; z-index: 1000;
 }
 .content { padding: 2rem; min-height: 200vh; }
 .details-content { display: none; }
@@ -14,27 +14,12 @@ layout: default
 </style>
 
 <div class="pinned-summary" onclick="toggleContent()">
-  📋 Click to expand details (stays pinned on scroll)
+  📋 Click to expand details
 </div>
 
 <div class="content">
   <div id="detailsContent" class="details-content">
-
-# Your Main Heading
-
-This is **bold** and *italic* Markdown that renders properly.
-
-## Subsections work too
-
-- List item 1
-- List item 2 with `inline code`
-- [Links work](https://github.com)
-
-```python
-# Code blocks render with syntax highlighting
-def hello():
-    print("World!")
-```
+    {% include expandable-content.md %}
   </div>
 </div>
 
