@@ -1,14 +1,12 @@
 ---
-# Front matter for Jekyll layout/theme
 layout: default
 ---
 
 <style>
 .pinned-summary {
-  position: sticky; top: 0;
-  background: white; padding: 1rem;
-  border-bottom: 2px solid #0969da; cursor: pointer;
-  z-index: 1000;
+  position: sticky; top: 0; background: white;
+  padding: 1rem; border: 2px solid #0969da;
+  cursor: pointer; z-index: 1000; font-weight: bold;
 }
 .content { padding: 2rem; min-height: 200vh; }
 .details-content { display: none; }
@@ -16,20 +14,23 @@ layout: default
 </style>
 
 <div class="pinned-summary" onclick="toggleContent()">
-  📋 Click to expand (stays pinned)
+  📋 Click to expand details (stays pinned on scroll)
 </div>
 
 <div class="content">
   <div id="detailsContent" class="details-content">
-    ## Unlimited scrollable Markdown content
-    - Works perfectly on GitHub Pages
-    - No SVG height limits
-    - Native browser scrolling
-  </div>
-</div>
 
-<script>
-function toggleContent() {
-  document.getElementById('detailsContent').classList.toggle('open');
-}
-</script>
+# Your Main Heading
+
+This is **bold** and *italic* Markdown that renders properly.
+
+## Subsections work too
+
+- List item 1
+- List item 2 with `inline code`
+- [Links work](https://github.com)
+
+```python
+# Code blocks render with syntax highlighting
+def hello():
+    print("World!")
