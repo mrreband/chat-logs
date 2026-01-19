@@ -1,0 +1,45 @@
+.pinned-summary {
+  position: sticky;
+  top: 0px;
+  color: #f3fef7;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #ffa95d;
+  padding: 1rem 1rem 1rem 1rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+details[open] > .pinned-summary {
+  border-bottom: 2px solid #ffa95d;
+}
+
+.pinned-summary::content {
+  border-bottom: 1px solid #ffffff;
+}
+
+.content {
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #1f1f1f, #000000);
+  color: #f0f3fd;
+  /* border-bottom: 1px solid #33ef46; */
+}
+.details-content {
+  display: none;
+}
+.details-content.open {
+  display: block;
+}
+.small {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.actions {
+  margin-top: 1rem;
+}
+.user {
+  color: #4ea1ff;
+}
+
+.agent {
+  color: #33ef46;
+}
