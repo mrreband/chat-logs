@@ -34,3 +34,12 @@ This is **bold** and *italic* Markdown that renders properly.
 # Code blocks render with syntax highlighting
 def hello():
     print("World!")
+```
+  </div>
+</div>
+
+<script>
+function toggleContent() {
+  document.getElementById('detailsContent').classList.toggle('open');
+}
+</script>
